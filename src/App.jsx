@@ -6,7 +6,7 @@ import styles from './App.module.css';
 import './global.css';
 import { Sidebar } from './componentes/Sidebar';
 
-function App() {
+export function App() {
     return (
     <div>
       <Header />
