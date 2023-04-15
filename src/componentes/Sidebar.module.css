@@ -1,5 +1,5 @@
 .sidebar{
-    background-color: var(--gray-800);
+    background: var(--gray-800);
     border-radius: 8px;
     overflow: hidden;
 }
@@ -7,6 +7,7 @@
 .cover{
     width: 100%;
     height: 72px;
+    object-fit: cover;
 }
 
 .profile{
@@ -17,13 +18,12 @@
     margin-top: calc(0px - 1.5rem -6px);
 
 }
-.avatar{
-    box-sizing: initial;
-    width: 3rem;
-    height: 3rem;
+.avatar {
+    width: calc(3rem + 12px);
+    height: calc(3rem + 12px);
     border-radius: 8px;
     border: 4px solid var(--gray-800);
-    outline: 2px solid var(--geen-500);
+    outline: 2px solid var(--green-500);
 }
 .profile strong{
     margin-top: 1rem;
@@ -32,7 +32,7 @@
 }
 .profile span{
     font-size: 0.875rem;
-    color: var(--geen-400);
+    color: var(--gray-400);
     line-height: 1.6;
 }
 
@@ -42,11 +42,11 @@
     padding: 1.5rem 2rem 2rem ;
 }
 
-.sidebar footer a{
+.sidebar footer a {
     width: 100%;
     background: transparent;
-    color: var(--geen-500);
-    border: 1px solid var(--geen-500);
+    color: var(--green-500);
+    border: 1px solid var(--green-500);
     border-radius: 8px;
     height: 50px;
     padding: 0 1.5rem;
@@ -64,5 +64,6 @@
 }
 
 .sidebar  footer a:hover{
-    background: var(--geen-500);
+    background: var(--green-500);
+    color: var(--white)
 }
